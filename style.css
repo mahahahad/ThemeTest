@@ -1,114 +1,114 @@
-*{
-	padding: 0;
-	margin: 0;
-	overflow-x: hidden;
+* {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
 }
-:root{
---bgColor: #040710;
---txtColor: #F7FFF7;
---txtHover: #3E95A3;
---accent: #B00B69;
+:root {
+  --bgColor: #040710;
+  --txtColor: #f7fff7;
+  --txtHover: #3e95a3;
+  --accent: #b00b69;
 }
-body{
-	background-color: var(--bgColor, black);
-	color: var(--txtColor, white);
-	transition: all 400ms cubic-bezier(.41,.01,.28,1.02);
+body {
+  background-color: var(--bgColor, black);
+  color: var(--txtColor, white);
+  transition: all 400ms cubic-bezier(0.41, 0.01, 0.28, 1.02);
 }
-.container{
-	display: flex;
-	flex-direction: column;
-	height: 90vh;
-	width: 100vw;
-	align-items: center;
-	justify-content: center;
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
 }
-h1{
-	font-size: 7rem;
-	font-family: "Quattrocento", serif;
-	text-transform: uppercase;
-	font-weight: 800;
+h1 {
+  font-size: 7rem;
+  font-family: "Quattrocento", serif;
+  text-transform: uppercase;
+  font-weight: 800;
 }
 h1::selection,
-h2::selection{
-	background-color: var(--accent, "#B00B69");
+h2::selection {
+  background-color: var(--accent, "#B00B69");
+  transition: color 1s cubic-bezier(0.41, 0.01, 0.28, 1.02);
 }
-h2{
-	font-size: 2rem;
-	font-family: "Rubik", sans-serif;
-	font-weight: 100;
 
+h2 {
+  font-size: 2rem;
+  font-family: "Rubik", sans-serif;
+  font-weight: 100;
 }
-li{
-	font-size: 1.2rem;
-	font-family: "Rubik", sans-serif;
-	font-weight: 400;
-	cursor: pointer;
-	transition: color 200ms ease-out;
+li {
+  font-size: 1.2rem;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+  transition: color 200ms ease-out;
 }
-li:hover{
-	color: var(--txtHover, black);
+li:hover {
+  color: var(--txtHover, black);
 }
-button{
-	border: 1px solid var(--txtColor, black);
-	color: var(--txtColor, black);
-	font-family: "Rubik", sans-serif;
-	font-size: 1rem;
-	font-weight: 800;
-	background-color: rgba(0,0,0,0);
-	padding: 1vh 1.5vw;
-	margin-top: 2%;
-	transition-duration: 600ms;
+button {
+  border: 1px solid var(--txtColor, black);
+  color: var(--txtColor, black);
+  font-family: "Rubik", sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 1vh 1.5vw;
+  margin-top: 2%;
+  transition-duration: 600ms;
 }
-button:hover{
-	border-radius: 25px;
-	border: 1px solid var(--txtColor, black);
-	color: var(--txtHover);
-}	
-nav{
-	background-color: rgba(0,0,0,0.1);
-	height: 10vh;
+button:hover {
+  border-radius: 25px;
+  border: 1px solid var(--txtColor, black);
+  color: var(--txtHover);
+}
+nav {
+  background-color: rgba(0, 0, 0, 0.1);
+  height: 10vh;
 }
 .nav-links {
-	
-	display: flex;
-	flex-direction: row;
-	width: 100%;
-	align-items: center;
-	justify-content: space-evenly;
-	height: 100%;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
 }
-ul{
-	margin-left: auto;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	height: 100%;
-	width: 20%;
-	justify-content: space-around;
-	padding-right: 5%;
+ul {
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  width: 20%;
+  justify-content: space-around;
+  padding-right: 5%;
 }
-.Logo{
-	font-size: 2.5rem;
+.Logo {
+  font-size: 2.5rem;
 }
-.logoMain{
-	cursor: pointer;
-	width: auto;
-	height: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding-left: 5%;
+.logoMain {
+  cursor: pointer;
+  width: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 5%;
 }
 
-.theme{
-	font-family: "Lora", serif;
-	font-style: italic;
-	color: var(--txtHover);
-	padding-left: 0%;
+.theme {
+  font-family: "Lora", serif;
+  font-style: italic;
+  color: var(--txtHover);
+  padding-left: 0%;
 }
-.tester{
-	font-family: "Rubik", serif;
-	font-weight: 800;
-	text-transform: uppercase;
-	color: var(--accent);
+.tester {
+  font-family: "Rubik", serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--accent);
 }
